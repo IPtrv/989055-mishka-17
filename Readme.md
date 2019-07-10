@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь Петров](https://up.htmlacademy.ru/adaptive/17/user/989055).
-* Наставник: `Неизвестно`.
+* Наставник: Владислав Балабанович`.
 
 ---
 
