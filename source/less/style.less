@@ -1,1 +1,48 @@
-body { background: red; }
+@import "page-header.less";
+@import "announce.less";
+@import "catalog-list__item.less";
+
+.offset(@padding; @margin) {
+  padding: @padding;
+  margin: @margin;
+}
+
+.size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+
+body {
+ .offset(0; 0);
+  width: 320px;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+.catalog-list {
+  .offset(0; 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
