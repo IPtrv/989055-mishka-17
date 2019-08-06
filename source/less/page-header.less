@@ -1,20 +1,29 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .offset(0; 0);
-  position: relative;
 
   width: 320px;
-  min-height: 80px;
+  min-height: 79px;
 
   background-color: #ffffff;
 }
 
-.page-header__logo-image {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    margin-left: -43px;
-    margin-top: -18px;
+.page-header__logo {
+  .offset(0; 0);
+  .size(86px; 35px);
+}
 
-    .size(86px; 35px);
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    .size(113px; 46px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    .size(149px; 72px);
+  }
 }
