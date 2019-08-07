@@ -1,9 +1,10 @@
 body {
  .offset(0; 0);
   width: 320px;
-  background-color: #ffffff;
+
   font-family: "Open Sans", Arial, sans-serif;
-  background-color: red;
+
+  background-color: @bg-white;
 }
 
 img {
@@ -11,25 +12,17 @@ img {
   height: auto;
 }
 
-.page-container {
-  .offset(0; auto);
-  .size(320px; auto);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
 @media (min-width: @tablet-width) {
   body {
     width: 768px;
-    .page-container {
-      .size(768px; auto);
+    background-color: lightgray;
   }
 }
 
 @media (min-width: @desktop-width) {
   body {
     width: 1150px;
-    .page-container {
-    .size(1150px; auto);
+    background-color: green;
   }
 }
 
