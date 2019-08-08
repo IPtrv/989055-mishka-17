@@ -32,7 +32,7 @@
 .announce__button {
   .offset(0; 0);
   .size(320px; 103px);
-  background-color: #63d1bb;
+  background-color: @bg-aquamarine;
 
   a {
     .offset(0; 0);
@@ -46,5 +46,111 @@
 }
 
 .announce__button:last-of-type {
-  background-color: #56c3b2;
+  background-color: @bg-darkaquamarine;
+}
+
+@media (min-width: @tablet-width) {
+  .announce {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    .offset(0; 0);
+
+    width: 772px;
+    min-height: 746px;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+
+      h2 {
+      position: absolute;
+      top: 160px;
+      left: 50%;
+      .offset(0; 0);
+      margin-left: -247px;
+      .size(494px; 95px);
+
+      color: #010000;
+      font-size: 43px;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: center;
+      }
+  }
+
+  .announce__button {
+    .offset(0; 0);
+    .size(320px; 103px);
+    background-color: @bg-aquamarine;
+
+    a {
+      .offset(0; 0);
+      .size(334px; 120px);
+      color: #ffffff;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 24px;
+      text-decoration: none;
+    }
+  }
+
+  .announce__button:last-of-type {
+    background-color: @bg-darkaquamarine;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .announce {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    .offset(0; 0);
+
+    width: 1150px;
+    min-height: 746px;
+
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+
+      h2 {
+      position: absolute;
+      top: 160px;
+      left: 50%;
+      .offset(0; 0);
+      margin-left: -303px;
+      .size(605px; 112px);
+
+      color: #010000;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: 57px;
+      text-align: center;
+      }
+  }
+
+  .announce__button {
+    .offset(0; 0);
+    .size(334px; 119px);
+    background-color: @bg-aquamarine;
+
+    a {
+      .offset(0; 0);
+      .size(334px; 120px);
+      color: #ffffff;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 24px;
+      text-decoration: none;
+    }
+  }
+
+  .announce__button:last-of-type {
+    background-color: @bg-darkaquamarine;
+  }
 }
