@@ -1,0 +1,40 @@
+.advantages {
+  margin: 0 auto;
+  padding-left: 0;
+  .size(260px; auto);
+  h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: @bg-black;
+  }
+}
+
+.advantages-list {
+  .offset(0; 0);
+  list-style: none;
+}
+
+.advantages-list__item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  .size(205px; 94px);
+  margin-top: 30px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: @bg-black;
+}
+
+.advantages-list__item::after {
+  .pseudo();
+}
+
+.advantages-list__item--money {
+  .pseudo();
+  .size(47px; 27px);
+  background-image: url("../img/icon-feature-money.svg");
+}
