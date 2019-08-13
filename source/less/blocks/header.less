@@ -1,0 +1,162 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @bg-white;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  min-height: 80px;
+
+  &__toggle {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    .size(20px; 14px);
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+  }
+
+  ul {
+    .offset(0; 0);
+    list-style: none;
+  }
+
+  &__first-menu,
+  &__second-menu,
+  &__third-menu,
+  &__text {
+    display: none;
+  }
+
+  &__show-menu {
+    display: block;
+  }
+}
+
+@media(min-width: @tablet-width) {
+  .header {
+    &__first-menu,
+    &__second-menu,
+    &__text {
+      display: flex;
+      min-height: 90px;
+    }
+
+    &__wrapper {
+      margin: 0 auto;
+      min-width: 668px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__nav {
+      .offset(0; 0);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .offset(0; 0);
+        width: auto;
+        border: 2px dashed red;
+      }
+    }
+// Поменять через picture
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 209px;
+      order: 1;
+      width: 113px;
+      min-height: 90px;
+      border: 2px dashed red;
+    }
+
+    &__first-menu {
+      order: 3;
+    }
+
+    &__second-menu {
+      order: 2;
+      li:first-of-type a {
+        width: 90px;
+        height: 100%;
+        background-image: url("../img/icon-search.svg");
+        background-repeat: no-repeat;
+          border: 2px dashed red;
+      }
+      span {
+        display: none;
+      }
+    }
+
+    &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .offset(0; 0);
+      order: 4;
+      font-size: 15px;
+      text-decoration: none;
+      color: #444444;
+
+      border: 2px dashed red;
+    }
+  }
+}
+
+/* Десктопные стили */
+@media(min-width: @desktop-width) {
+  .header {
+    /* Цетровщик */
+    &__wrapper {
+      width: 1100px;
+      margin: 0 auto;
+      background-color: lightblue;
+    }
+    /* Показывем скрытое раннее третье меню */
+    &__third-menu {
+      display: block;
+    }
+
+   /* Обновляем и задаем каждому элементу сетки его параметры – order, width и тд */
+    &__logo {
+      order: 1;
+    }
+    &__first-menu {
+      order: 0;
+      margin: 0;
+      font-size: 17px;
+      display: inline-block;
+      width: 40%;
+      li {
+        line-height: 90px;
+      }
+    }
+    &__second-menu {
+      order: 3;
+      display: inline-block;
+      width: 40%;
+    }
+    &__third-menu {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 18px;
+      order: 3;
+    }
+    &__text {
+      order: 3;
+    }
+  }
+}

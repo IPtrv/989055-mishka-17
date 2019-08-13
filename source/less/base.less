@@ -1,10 +1,19 @@
 body {
  .offset(0; 0);
-  width: 320px;
 
   font-family: "Open Sans", Arial, sans-serif;
 
   background-color: @bg-white;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 img {
@@ -13,15 +22,19 @@ img {
 }
 
 @media (min-width: @tablet-width) {
-  body {
-    width: 768px;
+  .container {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: lightblue;
   }
 }
 
 @media (min-width: @desktop-width) {
-  body {
-    width: 1150px;
+  .container {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: lightgreen;
   }
 }
