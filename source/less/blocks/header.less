@@ -62,6 +62,7 @@
         color: #000000;
         text-decoration: none;
       }
+
       li {
         display: flex;
         justify-content: center;
@@ -69,15 +70,10 @@
         .offset(0; 0);
       }
     }
-// Поменять через picture
+
     &__logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin-right: 209px;
       order: 1;
-      width: 112px;
-      min-height: 46px;
     }
 
     &__first-menu {
@@ -86,7 +82,7 @@
       line-height: 24px;
       font-weight: 700;
       li:first-of-type {
-      margin-right: 37px;
+        margin-right: 37px;
       }
     }
 
@@ -107,7 +103,6 @@
           display: none;
         }
       }
-
       li:last-of-type {
         padding-left: 60px;
       }
@@ -120,17 +115,12 @@
     }
 
     &__text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .offset(0; 0);
       order: 4;
       font-size: 15px;
       line-height: 24px;
       color: #444444;
     }
   }
-}
 
 @media(min-width: @desktop-width) {
   .header {
@@ -157,24 +147,31 @@
     }
 
     &__logo {
+      order: 2;
       width: 20%;
       margin: 0 auto;
+      img {
+        .size(113px; 46px);
+      }
     }
 
     &__first-menu {
+      order: 1;
       width: 40%;
-      order: 0;
-      outline: 2px solid red;
       li:first-of-type {
       margin-right: 70px;
       }
     }
 
     &__second-menu {
+      order: 3;
       width: 40%;
       font-size: 17px;
       line-height: 24px;
       font-weight: 700;
+      span {
+        display: none;
+      }
       li:first-of-type a {
         width: 85px;
         min-height: 90px;
@@ -184,11 +181,6 @@
         border-left: 1px solid #ececec;
         border-right: 1px solid #ececec;
       }
-
-      span {
-        display: none;
-      }
-
       li:last-of-type {
         padding-left: 60px;
       }
@@ -201,16 +193,16 @@
     }
 
     &__third-menu {
-      order: 3;
+      order: 4;
       font-size: 15px;
       line-height: 24px;
       font-weight: 700;
       li:first-of-type {
-      margin-right: 60px;
+        margin-right: 60px;
       }
     }
+
     &__text {
-      outline: 2px solid red;
+      order 5;
     }
-  }
 }
