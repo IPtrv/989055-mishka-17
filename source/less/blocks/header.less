@@ -59,6 +59,7 @@
       flex-wrap: wrap;
       a {
         .offset(0; 0);
+        color: #000000;
         text-decoration: none;
       }
       li {
@@ -81,11 +82,11 @@
 
     &__first-menu {
       order: 3;
-      font-size: 17px;
+      font-size: 15px;
       line-height: 24px;
       font-weight: 700;
       li:first-of-type {
-        margin-right: 37px;
+      margin-right: 37px;
       }
     }
 
@@ -102,10 +103,11 @@
         background-position: center;
         border-left: 1px solid #ececec;
         border-right: 1px solid #ececec;
+        span {
+          display: none;
+        }
       }
-      span {
-        display: none;
-      }
+
       li:last-of-type {
         padding-left: 60px;
       }
@@ -124,57 +126,91 @@
       .offset(0; 0);
       order: 4;
       font-size: 15px;
-      text-decoration: none;
+      line-height: 24px;
       color: #444444;
-
-      border: 2px dashed red;
     }
   }
 }
 
-/* Десктопные стили */
 @media(min-width: @desktop-width) {
   .header {
-    /* Цетровщик */
+    &__first-menu,
+    &__second-menu,
+    &__third-menu,
+    &__text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 90px;
+    }
+
     &__wrapper {
       width: 1100px;
       margin: 0 auto;
-      background-color: lightblue;
-    }
-    /* Показывем скрытое раннее третье меню */
-    &__third-menu {
-      display: block;
     }
 
-   /* Обновляем и задаем каждому элементу сетки его параметры – order, width и тд */
-    &__logo {
-      order: 1;
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
+
+    &__logo {
+      width: 20%;
+      margin: 0 auto;
+    }
+
     &__first-menu {
-      order: 0;
-      margin: 0;
-      font-size: 17px;
-      display: inline-block;
       width: 40%;
-      li {
-        line-height: 90px;
+      order: 0;
+      outline: 2px solid red;
+      li:first-of-type {
+      margin-right: 70px;
       }
     }
+
     &__second-menu {
-      order: 3;
-      display: inline-block;
       width: 40%;
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 700;
+      li:first-of-type a {
+        width: 85px;
+        min-height: 90px;
+        background-image: url("../img/icon-search.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+      }
+
+      span {
+        display: none;
+      }
+
+      li:last-of-type {
+        padding-left: 60px;
+      }
+      li:last-of-type::before {
+        content: "";
+        .size(21px; 18px);
+        background-image: url("../img/icon-cart.svg");
+        background-repeat: no-repeat;
+      }
     }
+
     &__third-menu {
-      display: inline-block;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      margin-top: 18px;
       order: 3;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 700;
+      li:first-of-type {
+      margin-right: 60px;
+      }
     }
     &__text {
-      order: 3;
+      outline: 2px solid red;
     }
   }
 }
