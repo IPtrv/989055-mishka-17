@@ -44,11 +44,13 @@
               <source srcset="../img/hero-tablet@1x.jpg"/772x746 media="(min-width: 772px)">
               <img src="../img/hero-mobile@1x.jpg"/322x373 alt="Кукольный дом">
             </picture>
-            <div class="announce__button announce__button--lamp">
-              <a href="#">Предметы интерьера</a>
-            </div>
-            <div class="announce__button announce__button--toys">
-              <a href="#">Детские игрушки</a>
+            <div class="announce__button-wrap">
+              <div class="announce__button announce__button--lamp">
+                <a href="#">Предметы интерьера</a>
+              </div>
+              <div class="announce__button announce__button--toys">
+                <a href="#">Детские игрушки</a>
+              </div>
             </div>
         </div>
       </section>
@@ -94,21 +96,27 @@
         </section>
       </div>
       <section class="advantages">
-        <h2 >Коротко о нас</h2>
-        <ul class="advantages-list">
-          <li class="advantages-list__item advantages-list__item--flower">Экологически чистые материалы
-          </li>
-          <li class="advantages-list__item advantages-list__item--money">Скандинавский стиль по российской цене
-          </li>
-          <li class="advantages-list__item advantages-list__item--heart">Увеличивает лайки на фотографиях
-          </li>
-          <li class="advantages-list__item advantages-list__item--ball">Связано вручную с любовью и умилением
-          </li>
-          <li class="advantages-list__item advantages-list__item--rocket">Поддержка отечественного производителя
-          </li>
-          <li class="advantages-list__item advantages-list__item--gift">Поставляется в подарочной упаковке
-          </li>
-        </ul>
+        <div class"container">
+          <h2 >Коротко о нас</h2>
+          <div class="advantages__wrap">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--flower">Экологически чистые материалы
+              </li>
+              <li class="advantages__item advantages__item--money">Скандинавский стиль по российской цене
+              </li>
+              <li class="advantages__item advantages__item--heart">Увеличивает лайки на фотографиях
+              </li>
+            </ul>
+            <ul>
+              <li class="advantages__item advantages__item--ball">Связано вручную с любовью и умилением
+              </li>
+              <li class="advantages__item advantages__item--rocket">Поддержка отечественного производителя
+              </li>
+              <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -131,35 +139,42 @@
             <button class="reviews__prev visually-hidden" type="button">Следующий отзыв</button>
           </div>
         </div>
-      </section>
-      <button class="block-button">Написать</button>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <p class="contacts__email">e-mail:<a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-          <p class="contacts__text">Адрес: г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101
-          </p>
-        </div>
-        <div class="map">
-        </div>
-        <button class="block-button">Напишите нам</button>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram visually-hidden" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </section>
+        <button class="block-button">Написать</button>
+        <section class="map">
+          <div class="map__container">
+            <div class="map__contacts">
+              <p class="map__email">e-mail:<a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+              <p class="map__text">Адрес: г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101
+              </p>
+              <div class="map__image">
+              </div>
+              <button class="block-button">Напишите нам</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="container page-footer__wrapper">
+          <div class="page-footer__logo">
+            Mishka
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
