@@ -1,0 +1,215 @@
+.page-header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @bg-white;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  min-height: 80px;
+
+  &__toggle {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    .size(20px; 14px);
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+  }
+
+  ul {
+    .offset(0; 0);
+    list-style: none;
+  }
+
+  &__first-menu,
+  &__second-menu,
+  &__third-menu,
+  &__text {
+    display: none;
+  }
+
+  &__show-menu {
+    display: block;
+  }
+}
+
+@media(min-width: @tablet-width) {
+  .page-header {
+    &__first-menu,
+    &__second-menu,
+    &__text {
+      display: flex;
+      min-height: 90px;
+
+    }
+
+    &__wrapper {
+      margin: 0 auto;
+      width: 672px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 90px;
+      a {
+        .offset(0; 0);
+        color: #000000;
+        text-decoration: none;
+      }
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .offset(0; 0);
+      }
+    }
+
+    &__logo {
+      margin-right: 209px;
+      order: 1;
+    }
+
+    &__first-menu {
+      order: 3;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 700;
+      li:first-of-type {
+        margin-right: 37px;
+      }
+    }
+
+    &__second-menu {
+      order: 2;
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 700;
+      li:first-of-type a {
+        width: 90px;
+        height: 100%;
+        background-image: url("../img/icon-search.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+        span {
+          display: none;
+        }
+      }
+      li:last-of-type {
+        padding-left: 60px;
+      }
+      li:last-of-type::before {
+        content: "";
+        .size(21px; 18px);
+        background-image: url("../img/icon-cart.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 4;
+      font-size: 15px;
+      line-height: 24px;
+      color: #444444;
+    }
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .page-header {
+    &__first-menu,
+    &__second-menu,
+    &__third-menu,
+    &__text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 90px;
+    }
+
+    &__wrapper {
+      width: 1100px;
+      margin: 0 auto;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      order: 2;
+      width: 20%;
+      margin: 0 auto;
+      img {
+        .size(113px; 46px);
+      }
+    }
+
+    &__first-menu {
+      order: 1;
+      width: 40%;
+      li:first-of-type {
+      margin-right: 70px;
+      }
+    }
+
+    &__second-menu {
+      order: 3;
+      width: 40%;
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 700;
+      span {
+        display: none;
+      }
+      li:first-of-type a {
+        width: 85px;
+        min-height: 90px;
+        background-image: url("../img/icon-search.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+      }
+      li:last-of-type {
+        padding-left: 60px;
+      }
+      li:last-of-type::before {
+        content: "";
+        .size(21px; 18px);
+        background-image: url("../img/icon-cart.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__third-menu {
+      order: 4;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 700;
+      li:first-of-type {
+        margin-right: 60px;
+      }
+    }
+
+    &__text {
+      order: 5;
+    }
+  }
+}
