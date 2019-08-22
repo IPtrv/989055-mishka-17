@@ -4,6 +4,7 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@
       color: @bg-greyishbrown;
     }
   }
+
   &__author-name {
     font-weight: 700;
     font-size: 17px;
@@ -22,6 +24,7 @@
     font-style: normal;
     color: @bg-black;
   }
+
   &__author-post {
     font-weight: 400;
     font-size: 17px;
@@ -39,12 +42,32 @@
       width: 50px;
       height: 26px;
     }
-    &__prev {
-      outline: none;
-    }
-    &__next {
-      border-style: none;
-      border: none;
-    }
+  }
+
+  &__prev {
+    border: 1 px solid #ececec;
+    background-color: #ffffff;
+  }
+
+  &__next {
+    border: 1 px solid #ececec;
+    background-color: #ffffff;
+  }
+}
+
+.reviews__write {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+    button {
+    margin: 0 auto;
+    padding: 20px 80px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #444444;
+
+    border: 2px solid #444444;
+    background-color: #ffffff;
   }
 }
