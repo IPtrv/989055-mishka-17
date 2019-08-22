@@ -113,10 +113,13 @@
         }
       }
       li:last-of-type {
-        padding-left: 60px;
+        position: relative;
+        padding-left: 80px;
       }
       li:last-of-type::before {
+        position: absolute;
         content: "";
+        left: 30px;
         .size(21px; 18px);
         background-image: url("../img/icon-cart.svg");
         background-repeat: no-repeat;
@@ -193,15 +196,6 @@
         background-position: center;
         border-left: 1px solid #ececec;
         border-right: 1px solid #ececec;
-      }
-      li:last-of-type {
-        padding-left: 60px;
-      }
-      li:last-of-type::before {
-        content: "";
-        .size(21px; 18px);
-        background-image: url("../img/icon-cart.svg");
-        background-repeat: no-repeat;
       }
     }
 
