@@ -1,11 +1,13 @@
 .week-product__container {
   margin: 0 auto;
   padding: 0 30px;
-  @media(min-width: @tablet-width) {
+
+  @media (min-width: @tablet-width) {
     margin: 0 auto;
     padding: 0 50px;
   }
-  @media(min-width: @desktop-width) {
+
+  @media (min-width: @desktop-width) {
     margin: 0 auto;
     padding: 0 50px;
   }
@@ -13,114 +15,129 @@
 
 .week-product {
   margin: 35px 0;
-  &__header {
+}
+
+.week-product__header {
+  div {
+    margin-bottom: 27px;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+}
+
+.week-product__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.week-product__cost-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 50%;
+  margin-top: 80px;
+
+  p {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #444444;
+  }
+
+  a {
+    padding: 20px 100px;
+
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #444444;
+    text-decoration: none;
+
+    border: 2px solid #444444;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .week-product__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
     div {
-      margin-bottom: 27px;
-      font-weight: 700;
-      font-size: 17px;
-      line-height: 24px;
-      color: #63d1bb;
-      text-transform: uppercase;
+      width: 100px;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      margin-top: 0;
+
+      font-size: 42px;
+      line-height: 1;
     }
   }
-  &__content {
+
+  .week-product__content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  &__cost-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .week-product__details {
     width: 50%;
-    margin-top: 80px;
-    p {
-      font-size: 17px;
-      line-height: 24px;
-      font-weight: 700;
-      text-align: center;
-      color: #444444;
-    }
-    a {
-      padding: 20px 100px;
+  }
 
-      font-size: 17px;
-      line-height: 24px;
-      font-weight: 700;
-      text-align: center;
-      color: #444444;
-      text-decoration: none;
+  .week-product__foto {
+    width: 50%;
 
-      border: 2px solid #444444
+    img {
+      .size(333px; 404px);
     }
   }
 }
 
-@media(min-width: @tablet-width) {
-  .week-product {
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      div {
-        width: 100px;
-      }
-      h2 {
-        margin-bottom: 0;
-        margin-top: 0;
-        font-size: 42px;
-        line-height: 1;
-      }
-    }
-    &__content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    &__details {
-      width: 50%;
-    }
-    &__foto {
-      width: 50%;
-      img {
-        .size(333px; 404px);
-      }
+@media (min-width: @desktop-width) {
+  .week-product__header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    h2 {
+      font-size: 53px;
+      position: relative;
+      z-index: 1;
     }
   }
-}
 
-@media(min-width: @desktop-width) {
-  .week-product {
-    &__header {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-      h2 {
-        font-size: 53px;
-        position: relative;
-        z-index: 1;
-      }
+  .week-product__content {
+    margin-top: -100px;
+  }
+
+  .week-product__details {
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+
+  .week-product__foto {
+    width: 50%;
+
+    img {
+      .size(525px; 636px);
     }
-    &__content {
-      margin-top: -100px;
-    }
-    &__details {
-      padding-top: 100px;
-      padding-left: 100px;
-    }
-    &__foto {
-      width: 50%;
-      img {
-        .size(525px; 636px);
-      }
-    }
-    &__cost-btn {
-      padding-left: 100px;
-    }
+  }
+
+  .week-product__cost-btn {
+    padding-left: 100px;
   }
 }
