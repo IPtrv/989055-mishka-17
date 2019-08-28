@@ -1,4 +1,5 @@
 .reviews__item {
+  .offset(0; 0);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,22 +33,40 @@
   justify-content: space-between;
 
   width: 260px;
-
-  svg {
-    margin: 15px 40px;
-    width: 50px;
-    height: 26px;
-  }
+  height: 50px;
 }
 
 .reviews__prev {
-  border: 1 px solid #ececec;
-  background-color: #ffffff;
+  width: 50%;
+
+  border: 1px solid #ececec;
+
+  button {
+    outline: none;
+    border: none;
+    .size(100%; 100%);
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+
+  }
 }
 
 .reviews__next {
-  border: 1 px solid #ececec;
-  background-color: #ffffff;
+  width: 50%;
+
+  border: 1px solid #ececec;
+
+  button {
+    outline: none;
+    border: none;
+    .size(100%; 100%);
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+  }
 }
 
 .reviews__btn {
