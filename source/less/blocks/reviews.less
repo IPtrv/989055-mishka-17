@@ -94,22 +94,34 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reviews__wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-  }
-
   .reviews {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg 2x");
     }
+  }
+
+  .reviews__wrapper {outline: 3px solid red;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reviews__wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+
+    .size(100%; 15px);
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
   }
 
   .reviews__title {
