@@ -39,7 +39,7 @@
     <main class="page-main">
       <section class="catalog-list">
         <h2>Каталог товаров</h2>
-        <div class="container">
+        <div class="container catalog-list__wrapper">
           <div class="catalog-list__item">
             <div class="catalog-list__foto">
               <a href="#">
@@ -98,18 +98,24 @@
       </section>
       <section class="process">
         <div class="container">
-          <h2>Процесс производства</h2>
+          <div class="process__wrapper">
+          <h2 class="process__title">Процесс производства</h2>
           <div class="process__video">
             <picture>
               <source media="(min-width: 1150px)" srcset="../img/video-desktop@1x.jpg, ../img/video-desktop@2x.jpg">
               <source media="(min-width: 772px)" srcset="../img/video-tablet@1x.jpg, ../img/video-tablet@2x.jpg">
-              <img src="../img/video-mobile@1x.jpg" srcset="../img/video-mobile21x.jpg" alt="Видео процесс производства">
+              <img src="../img/video-mobile@1x.jpg" srcset="../img/video-mobile@2x.jpg" alt="Видео процесс производства">
             </picture>
           </div>
           <div class="process__text">
+            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
           </div>
           <div class="process__btn">
+            <button type="button">Сделать заказ
+            </button>
           </div>
+        </div>
         </div>
       </section>
     </main>
