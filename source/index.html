@@ -78,9 +78,9 @@
             </div>
             <div class="week-product__foto">
               <picture>
-                <source srcset="../img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)">
-                <source srcset="../img/triple-set-tablet@1x.jpg" media="(min-width: 772px)">
-                <img src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Корзины">
+                <source media="(min-width: 1150px)" srcset="../img/triple-set-desktop@1x.jpg, ../img/triple-set-desktop@2x.jpg">
+                <source media="(min-width: 772px)" srcset="../img/triple-set-tablet@1x.jpg, ../img/triple-set-tablet@1x.jpg">
+                <img src="../img/triple-set-mobile@1x.jpg" srcset="../img/triple-set-mobile@2x.jpg" width="260" height="315" alt="Корзины">
               </picture>
             </div>
             <div class="week-product__cost-btn">
@@ -114,65 +114,69 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="container">
-          <div class="reviews__list">
-            <h2 class="reviews__title">Отзывы</h2>
-            <blockquote class="reviews__item">
+        <div class="container reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__content">
+            <div class="reviews__item">
               <p>Я молодая мама, но всё равно фотографии не набирали и близко
                 такого количества лайков, как у популярных инстамамочек. В отчаянии,
                 я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу
                 стали более стильными, а также набирают больше лайков!
               </p>
-              <cite class="reviews__author-name">Анастасия Красильникова
-              </cite>
-              <p class="reviews__author-post">@misssssiskras
-              </p>
-            </blockquote>
-          </div>
-          <div class="reviews__toggles">
-            <div class="reviews__prev">
-              <button type="button">
-              </button>
             </div>
-            <div class="reviews__next">
-              <button type="button">
-              </button>
-            </div>
+            <div class="reviews__footer">
+              <div class="reviews__requisites">
+                <p class="reviews__author-name">Анастасия Красильникова
+                </p>
+                <p class="reviews__author-post">@misssssiskras
+                </p>
+              </div>
+              <div class="reviews__toggles">
+                <div class="reviews__prev">
+                  <button type="button">
+                  </button>
+                </div>
+                <div class="reviews__next">
+                  <button type="button">
+                  </button>
+                </div>
+              </div>
           </div>
         </div>
         <div class="reviews__btn">
           <button>Написать</button>
         </div>
-        </section>
-        <section class="contacts">
-          <div class="container contacts__container">
-            <div class="contacts__requisites">
-              <h2>Контакты</h2>
-              <div class="contacts__email">
-                <p>e-mail:</p>
-                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru
-                </a>
-              </div>
-              <div class="contacts__address">
-                <p>Адрес:</p>
-                <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-                </p>
-              </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__requisites">
+            <h2>Контакты</h2>
+            <div class="contacts__email">
+              <p>e-mail:</p>
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru
+              </a>
             </div>
-            <div class="contacts__map">
-              <picture>
-                <source srcset="../img/map-desktop@1x.jpg" media="(min-width: 1150px)">
-                <source srcset="../img/map-tablet@1x.jpg" media="(min-width: 772px)">
-                <img src="../img/map-mobile@1x.jpg" width="320" height="460" alt="Карта">
-              </picture>
-            </div>
-            <div class="contacts__btn">
-              <button>Напишите нам
-              </button>
+            <div class="contacts__address">
+              <p>Адрес:</p>
+              <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+              </p>
             </div>
           </div>
-        </section>
-      </main>
+          <div class="contacts__map">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="../img/map-desktop@1x.jpg, ../img/map-desktop@2x.jpg">
+              <source media="(min-width: 772px)" srcset="../img/map-tablet@1x.jpg, ../img/map-tablet@1x.jpg">
+              <img src="../img/map-mobile@1x.jpg" srcset="../img/map-mobile@2x.jpg" width="320" height="460" alt="Карта">
+            </picture>
+          </div>
+          <div class="contacts__btn">
+            <button>Напишите нам
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
       <footer class="page-footer">
         <div class="container page-footer__container">
           <div class="page-footer__logo">

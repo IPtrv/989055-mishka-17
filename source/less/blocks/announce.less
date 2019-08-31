@@ -7,6 +7,10 @@
   background-color: #f9f9f9;
   background-size: auto;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
+
   h2 {
     color: #010000;
     font-size: 27px;
@@ -69,7 +73,10 @@
   .announce {
     background-image: url("../img/hero-tablet@1x.jpg");
 
-    h2 {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+      h2 {
       font-size: 43px;
       font-weight: 700;
       line-height: 50px;
