@@ -41,30 +41,30 @@
   position: relative;
 }
 
-.booking__accessory + label::before {
-  position: absolute;
-  content: "";
-  left: -65px;
-  bottom: -10px;
-  .size(40px; 40px);
-  border-radius: 50px;
-  background-color: @bg-aquamarine;
-  border: 10px solid @bg-white;
-  box-shadow: 0 0 2px @bg-black;
-}
-
 .booking__accessory + label::after {
   position: absolute;
   content: "";
   left: -65px;
   bottom: -10px;
   .size(40px; 40px);
-  border-radius: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px @bg-black;
+}
+
+.booking__accessory:checked + label::after {
+  position: absolute;
+  content: "";
+  left: -65px;
+  bottom: -10px;
+  .size(40px; 40px);
+  border-radius: 50%;
+  background-color: @bg-aquamarine;
   border: 10px solid @bg-white;
   box-shadow: 0 0 2px @bg-black;
 }
 
 .booking__colors {
+  padding: 50px 0;
   li {
     padding-top: 45px;
   }
@@ -79,5 +79,18 @@
   left: -65px;
   bottom: -10px;
   .size(40px; 40px);
+  border: 2px solid #444444;
+}
+
+.booking__color:checked + label::before {
+  position: absolute;
+  content: "";
+  left: -65px;
+  bottom: -10px;
+  .size(40px; 40px);
+  background-image: url("../img/icon-tick.svg");
+  background-size: 22px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
   border: 2px solid #444444;
 }
