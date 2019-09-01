@@ -38,7 +38,7 @@
     </header>
     <main class="main-page">
       <section class="booking">
-        <h2>Вязание на заказ</h2>
+        <h1>Вязание на заказ</h1>
         <div class="container">
           <div class="booking__text">
             <p>Мы будем рады воплотить в жизнь ваши пожелания!
@@ -47,35 +47,77 @@
             </p>
           </div>
           <div class="booking__form">
-            <ul class="booking__type">
-              <li></li>
-              <li></li>
-            </ul>
-            <ul class="booking__color">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <ul class="booking__name">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <ul class="booking__requisites">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <div class="booking__btn">
-              <button type="button">Отправить заказ
-              </button>
-            </div>
-            <div class="booking__txt">
-              <p>*Поля обязательны для заполнения</p>
-            </div>
+            <form action="#" method="get">
+              <h2>Тип</h2>
+              <ul class="booking__type">
+                <li>
+                  <input id="accessory" class="booking__accessory" type="radio" checked>
+                  <label for="accessory">Аксессуар для интерьера</label>
+                </li>
+                <li>
+                  <input id="toy" class="booking__accessory" type="radio">
+                  <label for="toy">Детская игрушка</label>
+                </li>
+              </ul>
+            </form>
+            <form action="#" method="get">
+              <h2>Цвет</h2>
+              <ul class="booking__colors">
+                <li>
+                  <input id="white" class="booking__color" type="checkbox" checked>
+                  <label for="white">Белый</label>
+                </li>
+                <li>
+                  <input id="gray" class="booking__color" type="checkbox" checked>
+                  <label for="gray">Серый</label>
+                </li>
+                <li>
+                  <input id="tiffany" class="booking__color" type="checkbox">
+                  <label for="tiffany">"Тиффани"</label></li>
+                <li>
+                  <input id="black" class="booking__color" type="checkbox">
+                  <label for="black">Чёрный</label></li>
+                <li>
+                  <input id="pink" class="booking__color" type="checkbox">
+                  <label for="pink">"Розовый"</label></li>
+                <li>
+                  <input id="orange" class="booking__color" type="checkbox">
+                  <label for="orange">Оранжевый</label></li>
+              </ul>
+            </form>
+            <form action="#" method="get">
+              <h2>ФИО</h2>
+              <ul class="booking__name">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </form>
+            <form action="#" method="get">
+              <h2>Тел</h2>
+              <ul>
+                <li></li>
+              </ul>
+            </form>
+            <form action="#" method="get">
+              <h2>E-mail</h2>
+              <ul>
+                <li></li>
+              </ul>
+            </form>
+            <form action="#" method="get">
+              <h2>Доп</h2>
+              <ul>
+                <li></li>
+              </ul>
+            </form>
+          </div>
+          <div class="booking__txt">
+            <p>*Поля обязательны для заполнения</p>
+          </div>
+          <div class="booking__btn">
+            <button type="button">Отправить заказ
+            </button>
           </div>
         </div>
       </section>
