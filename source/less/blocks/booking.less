@@ -47,8 +47,9 @@
   left: -65px;
   bottom: -10px;
   .size(40px; 40px);
+
   border-radius: 50%;
-  box-shadow: 0 0 2px @bg-black;
+  box-shadow: 0 0 0 2px @bg-black;
 }
 
 .booking__accessory:checked + label::after {
@@ -57,10 +58,11 @@
   left: -65px;
   bottom: -10px;
   .size(40px; 40px);
+
   border-radius: 50%;
   background-color: @bg-aquamarine;
   border: 10px solid @bg-white;
-  box-shadow: 0 0 2px @bg-black;
+  box-shadow: 0 0 0 2px @bg-black;
 }
 
 .booking__colors {
@@ -93,4 +95,10 @@
   background-position: center;
   background-repeat: no-repeat;
   border: 2px solid #444444;
+}
+
+.booking__name-item,
+.booking__phone-item,
+.booking__mail-item {
+  border: none;
 }

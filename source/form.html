@@ -51,11 +51,11 @@
               <h2>Тип</h2>
               <ul class="booking__type">
                 <li>
-                  <input id="accessory" class="booking__accessory visually-hidden" type="radio" checked>
+                  <input id="accessory"  type="radio" name="type-btn" class="booking__accessory visually-hidden" value="Аксессуар для интерьера" checked>
                   <label for="accessory">Аксессуар для интерьера</label>
                 </li>
                 <li>
-                  <input id="toy" class="booking__accessory visually-hidden" type="radio">
+                  <input id="toy" type="radio" name="type-btn" class="booking__accessory visually-hidden" value="Детская игрушка">
                   <label for="toy">Детская игрушка</label>
                 </li>
               </ul>
@@ -79,7 +79,7 @@
                   <label for="black">Чёрный</label></li>
                 <li>
                   <input id="pink" class="booking__color visually-hidden" type="checkbox">
-                  <label for="pink">"Розовый"</label></li>
+                  <label for="pink">Розовый</label></li>
                 <li>
                   <input id="orange" class="booking__color visually-hidden" type="checkbox">
                   <label for="orange">Оранжевый</label></li>
@@ -88,27 +88,47 @@
             <form action="#" method="get">
               <h2>ФИО</h2>
               <ul class="booking__name">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                  <label>Имя<input class="booking__name-item" placeholder="Введите ваше имя*">
+                  </label>
+                </li>
+                <li>
+                  <label>Фамилия<input class="booking__name-item" placeholder="Укажите фамилию*">
+                  </label>
+                </li>
+                <li>
+                  <label>Отчество<input class="booking__name-item" placeholder="Отчество, если желаете">
+                  </label>
+                </li>
               </ul>
             </form>
             <form action="#" method="get">
               <h2>Тел</h2>
-              <ul>
-                <li></li>
+              <ul class="booking__phone">
+                <li>
+                  <label><input class="booking__phone-item" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  </label>
+                </li>
               </ul>
             </form>
             <form action="#" method="get">
               <h2>E-mail</h2>
-              <ul>
-                <li></li>
+              <ul class="booking__mail">
+                <li>
+                  <label><input class="booking__mail-item" placeholder="Ваш Email*">
+                  </label>
+                </li>
               </ul>
             </form>
             <form action="#" method="get">
               <h2>Доп</h2>
-              <ul>
-                <li></li>
+              <ul class="booking__add">
+                <li>
+                  <label>
+                    <textarea class="booking__add-item">Опишите все ваши пожелания к заказу
+                    </textarea>
+                  </label>
+                </li>
               </ul>
             </form>
           </div>
