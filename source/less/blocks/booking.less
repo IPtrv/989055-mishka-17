@@ -132,3 +132,34 @@
   border: none;
   width: 100%;
 }
+
+@media (min-width: @tablet-width) {
+  .booking__type {
+    display: flex;
+    justify-content: space-between;
+  }
+  h2::after {
+    display: none;
+  }
+
+  h2 {outline: 3px solid red;
+
+  }
+
+  .booking__colors {outline: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+  }
+  .booking__colors-list {outline: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 305px;
+  }
+
+  .booking__color + label::before,
+  .booking__color:checked + label::before{
+    .size(55px; 50px);
+  }
+}
