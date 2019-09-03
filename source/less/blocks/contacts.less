@@ -1,5 +1,5 @@
-.contacts__container {
-  padding: 0 30px;
+.contacts {
+  margin-top: 70px;
 }
 
 .contacts__requisites {
@@ -33,6 +33,24 @@
 
   p:last-of-type {
     width: 30%;
+  }
+}
+
+.contacts__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  button {
+    margin: 0 auto;
+    padding: 20px 80px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #444444;
+
+    border: 2px solid #444444;
+    background-color: #ffffff;
   }
 }
 
@@ -97,5 +115,9 @@
     img {
       .size(525px; 457px);
     }
+  }
+  .contacts h2::before {
+    left: -65px;
+    bottom: 0;
   }
 }

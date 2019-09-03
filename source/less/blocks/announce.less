@@ -7,6 +7,10 @@
   background-color: #f9f9f9;
   background-size: auto;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg 2x");
+    }
+
   h2 {
     color: #010000;
     font-size: 27px;
@@ -21,15 +25,18 @@
   flex-direction: column;
   justify-content: space-between;
 
+  margin: 0 auto;
   padding-top: 70px;
+  padding-left: 0;
+  padding-right: 0;
   min-height: 490px;
 }
 
 .announce__button {
-  padding: 30px;
   background-color: @bg-aquamarine;
 
   a {
+    padding: 30px 0;
     display: block;
     max-width: 106px;
 
@@ -66,7 +73,10 @@
   .announce {
     background-image: url("../img/hero-tablet@1x.jpg");
 
-    h2 {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg 2x");
+    }
+      h2 {
       font-size: 43px;
       font-weight: 700;
       line-height: 50px;
@@ -80,7 +90,19 @@
   }
 
   .announce__button-wrap {
+    position: relative;
     display: flex;
+  }
+
+  .announce__button-wrap::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    .size(100%; 24px);
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
   }
 
   .announce__button {
@@ -107,6 +129,10 @@
 @media (min-width: @desktop-width) {
   .announce {
     background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg 2x");
+    }
 
     h2 {
       font-size: 43px;

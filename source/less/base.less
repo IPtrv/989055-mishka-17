@@ -8,6 +8,23 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 0 30px;
+  max-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    max-width: 772px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 50px;
+    max-width: 1150px;
+  }
+}
+
+*,*::after,*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
