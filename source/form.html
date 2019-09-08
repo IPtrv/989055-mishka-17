@@ -50,13 +50,13 @@
             <form action="#" method="get">
               <div class="booking__type">
                 <h2>Тип</h2>
-                <ul>
-                  <li>
-                    <input id="accessory"  type="radio" name="type-btn" class="booking__accessory visually-hidden" value="Аксессуар для интерьера" checked>
+                <ul class="booking__type-list">
+                  <li class="booking__type-item">
+                    <input id="accessory"  type="radio" name="type-btn" class="booking__accessory visually-hidden" value="Аксессуар для интерьера" checked />
                     <label for="accessory">Аксессуар для интерьера</label>
                   </li>
-                  <li>
-                    <input id="toy" type="radio" name="type-btn" class="booking__accessory visually-hidden" value="Детская игрушка">
+                  <li class="booking__type-item">
+                    <input id="toy" type="radio" name="type-btn" class="booking__accessory visually-hidden" value="Детская игрушка" />
                     <label for="toy">Детская игрушка</label>
                   </li>
                 </ul>
@@ -64,73 +64,85 @@
               <div class="booking__colors">
                 <h2>Цвет</h2>
                 <ul class="booking__colors-list">
-                  <li>
-                    <input id="white" class="booking__color visually-hidden" type="checkbox" checked>
+                  <li class="booking__colors-item">
+                    <input id="white" type="text" class="booking__color visually-hidden" type="checkbox" checked />
                     <label for="white">Белый</label>
                   </li>
-                  <li>
-                    <input id="gray" class="booking__color visually-hidden" type="checkbox" checked>
+                  <li class="booking__colors-item">
+                    <input id="gray" type="text" class="booking__color visually-hidden" type="checkbox" checked />
                     <label for="gray">Серый</label>
                   </li>
+                  <li class="booking__colors-item">
+                    <input id="tiffany" type="text" class="booking__color visually-hidden" type="checkbox" />
+                    <label for="tiffany">"Тиффани"</label>
+                  </li>
+                  <li class="booking__colors-item">
+                    <input id="black" type="text" class="booking__color visually-hidden" type="checkbox" />
+                    <label for="black">Чёрный</label>
+                  </li>
+                  <li class="booking__colors-item">
+                    <input id="pink" type="text" class="booking__color visually-hidden" type="checkbox" />
+                    <label for="pink">Розовый</label>
+                  </li>
                   <li>
-                    <input id="tiffany" class="booking__color visually-hidden" type="checkbox">
-                    <label for="tiffany">"Тиффани"</label></li>
-                  <li>
-                    <input id="black" class="booking__color visually-hidden" type="checkbox">
-                    <label for="black">Чёрный</label></li>
-                  <li>
-                    <input id="pink" class="booking__color visually-hidden" type="checkbox">
-                    <label for="pink">Розовый</label></li>
-                  <li>
-                    <input id="orange" class="booking__color visually-hidden" type="checkbox">
-                    <label for="orange">Оранжевый</label></li>
+                    <input id="orange" type="text" class="booking__color visually-hidden" type="checkbox" />
+                    <label for="orange">Оранжевый</label>
+                  </li>
                 </ul>
               </div>
-              <h2>ФИО</h2>
-              <ul class="booking__name">
-                <li>
-                  <label>Имя<input class="booking__name-item" placeholder="Введите ваше имя*">
-                  </label>
-                </li>
-                <li>
-                  <label>Фамилия<input class="booking__name-item" placeholder="Укажите фамилию*">
-                  </label>
-                </li>
-                <li>
-                  <label>Отчество<input class="booking__name-item" placeholder="Отчество, если желаете">
-                  </label>
-                </li>
-              </ul>
-              <h2>Тел</h2>
-              <ul class="booking__phone">
-                <li>
-                  <label><input class="booking__phone-item" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                  </label>
-                </li>
-              </ul>
-              <h2>E-mail</h2>
-              <ul class="booking__mail">
-                <li>
-                  <label><input class="booking__mail-item" placeholder="Ваш Email*">
-                  </label>
-                </li>
-              </ul>
-              <h2>Доп</h2>
-              <ul class="booking__add">
-                <li>
-                  <label>
-                    <textarea class="booking__add-item">Опишите все ваши пожелания к заказу
-                    </textarea>
-                  </label>
-                </li>
-              </ul>
+              <div class="booking__name">
+                <h2>ФИО</h2>
+                <ul class="booking__name-list">
+                  <li class="booking__name-item">
+                    <input id="name" type="text" class="booking__name-field" placeholder="Введите ваше имя*" required />
+                    <label for="name">Имя</label>
+                  </li>
+                  <li class="booking__name-item">
+                    <input id="family" type="text" class="booking__name-field" placeholder="Укажите фамилию*" required />
+                    <label for="family">Фамилия</label>
+                  </li>
+                  <li class="booking__name-item">
+                    <input id="patronymic" type="text" class="booking__name-field" placeholder="Отчество, если желаете" />
+                    <label for="patronymic">Отчество</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="booking__phone">
+                <h2>Тел</h2>
+                <ul class="booking__phone-list">
+                  <li class="booking__phone-item">
+                    <input id="phone" type="text" class="booking__phone-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required />
+                    <label for="phone"></label>
+                  </li>
+                </ul>
+              </div>
+              <div class="booking__mail">
+                <h2>E-mail</h2>
+                <ul class="booking__mail-list">
+                  <li class="booking__mail-item">
+                    <input id="mail" type="text" class="booking__mail-field" placeholder="Ваш Email*" required />
+                    <label for="mail"></label>
+                  </li>
+                </ul>
+              </div>
+              <div class="booking__add">
+                <h2>Доп</h2>
+                <ul class="booking__add-list">
+                  <li class="booking__add-item">
+                    <label>
+                      <textarea class="booking__add-field">Опишите все ваши пожелания к заказу
+                      </textarea>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </form>
           </div>
           <div class="booking__txt">
             <p>*Поля обязательны для заполнения</p>
           </div>
           <div class="booking__btn">
-            <button type="button">Отправить заказ
+            <button type="submit">Отправить заказ
             </button>
           </div>
         </div>
@@ -144,20 +156,17 @@
         <ul class="page-footer__list">
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <span class="visually-hidden">Мы в Инстаграме
-              </span>
+              <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Мы в Фейсбуке
-              </span>
+              <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
           <li class="page-footer__item">
             <a class="page-footer__link page-footer__link--twitter" href="https://www.twitter.com/htmlacademy">
-              <span class="visually-hidden">Мы в Твиттере
-              </span>
+              <span class="visually-hidden">Мы в Твиттере</span>
             </a>
           </li>
         </ul>
@@ -166,8 +175,8 @@
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="../img/logo-htmlacademy.svg" alt="Логотип Академии">
           </a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>
